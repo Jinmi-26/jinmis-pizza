@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ultra', sans-serif;
+  background-image: url('pizza.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  image-rendering: crisp-edges;
+  -webkit-image-rendering: pixelated;
+}
+
+/* Header Position */
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+header i {
+  margin-right: 5px;
+}
+
+/* Main layout: Responsive and aligned */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  min-height: 100vh;
+  gap: 40px;
+}
+
+/* Hero text (right side) */
+.hero-text {
+  font-size: 120px;
+  text-align: right;
+  flex: 1 1 45%;
+  word-break: break-word;
+}
+
+/* Left content */
+.left-content {
+  flex: 1 1 45%;
+}
+
+.tagline {
+  font-family: 'Cookie', cursive;
+  font-size: 80px;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Prata', serif;
+  font-size: 80px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Buttons */
+.button-container {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
+
+.btn-order {
+  background-color: #F4A300;
+  color: #000000;
+}
+
+.btn-order:hover {
+  background-color: #ffb933;
+}
+
+.btn-contact {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
+
+.btn-contact:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-text,
+  .left-content {
+    font-size: 40px;
+    flex-basis: 100%;
+  }
+
+  .tagline,
+  .subtitle {
+    font-size: 40px;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
