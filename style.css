@@ -1,124 +1,130 @@
 * {
-      box-sizing: border-box;
-    }
+  box-sizing: border-box;
+}
 
-    html, body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      font-family: 'Ultra', sans-serif;
-      background-image: url('pizza.jpg'); /* Use a high-res version */
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      color: #FFFFFF;
-      image-rendering: crisp-edges;
-      -webkit-image-rendering: pixelated;
-    }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Ultra', sans-serif;
+  background-image: url('pizza.jpg'); /* Use a high-res version */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #FFFFFF;
+  image-rendering: crisp-edges;
+  -webkit-image-rendering: pixelated;
+}
 
-    header {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-      font-size: 20px;
-    }
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
 
-    header i {
-      margin-right: 5px;
-    }
+header i {
+  margin-right: 5px;
+}
 
-    main {
-      position: relative;
-      height: 100%;
-      width: 100%;
-    }
+main {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
 
-    .hero-text {
-      position: absolute;
-      bottom: 120px;
-      right: 20px;
-      font-size: 170px;
-      text-align: right;
-    }
+.hero-text {
+  position: absolute;
+  bottom: 120px;
+  right: 20px;
+  font-size: 170px;
+  text-align: right;
+}
 
-    .left-content {
-      position: absolute;
-      top: 250px; /* Tweak this to align with "to" on the right */
-      left: 100px;
-    }
+.left-content {
+  position: absolute;
+  top: 250px; /* Tweak this to align with "to" on the right */
+  left: 100px;
+}
 
-    .tagline {
-      font-family: 'Cookie', cursive;
-      font-size: 80px;
-      margin: 0;
-    }
+.tagline {
+  font-family: 'Cookie', cursive;
+  font-size: 80px;
+  margin: 0;
+}
 
-    .subtitle {
-      font-family: 'Prata', serif;
-      font-size: 80px;
-      margin-top: -10px;
-      margin-bottom: 20px;
-    }
+.subtitle {
+  font-family: 'Prata', serif;
+  font-size: 80px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
 
-    .button-container {
-      display: flex;
-      gap: 15px;
-    }
+.button-container {
+  display: flex;
+  gap: 15px;
+}
 
-    .btn {
-      font-family: 'Prata', serif;
-      font-size: 18px;
-      padding: 12px 25px;
-      border-radius: 30px;
-      border: none;
-      cursor: pointer;
-      transition: all 0.3s ease;
-    }
+.btn {
+  font-family: 'Prata', serif;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-    .btn-order {
-      background-color: #F4A300;
-      color: #000000;
-    }
+/* 🔆 Hover Glow + Zoom */
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+}
 
-    .btn-order:hover {
-      background-color: #ffb933;
-    }
+.btn-order {
+  background-color: #F4A300;
+  color: #000000;
+}
 
-    .btn-contact {
-      background-color: transparent;
-      color: #FFFFFF;
-      border: 2px solid #FFFFFF;
-    }
+.btn-order:hover {
+  background-color: #ffb933;
+}
 
-    .btn-contact:hover {
-      background-color: #FFFFFF;
-      color: #000000;
-    }
+.btn-contact {
+  background-color: transparent;
+  color: #FFFFFF;
+  border: 2px solid #FFFFFF;
+}
 
-    /* Responsive Styles */
-    @media (max-width: 768px) {
-      .hero-text {
-        font-size: 80px;
-        right: 10px;
-        bottom: 60px;
-      }
+.btn-contact:hover {
+  background-color: #FFFFFF;
+  color: #000000;
+}
 
-      .left-content {
-        top: 150px;
-        left: 20px;
-      }
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 80px;
+    right: 10px;
+    bottom: 60px;
+  }
 
-      .tagline, .subtitle {
-        font-size: 40px;
-      }
+  .left-content {
+    top: 150px;
+    left: 20px;
+  }
 
-      .button-container {
-        flex-direction: column;
-      }
+  .tagline, .subtitle {
+    font-size: 40px;
+  }
 
-      .btn {
-        font-size: 16px;
-        margin-bottom: 12px;
-      }
-    }
+  .button-container {
+    flex-direction: column;
+  }
+
+  .btn {
+    font-size: 16px;
+    margin-bottom: 12px;
+  }
+}
